@@ -1,22 +1,19 @@
-import img from './assets/bg.jpg'
-import logo from './assets/tonny.png'
-import './App.css'
+import Index from "./index.jsx";
+import Poems from "./Poems.jsx";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
 
   return (
-    <>
-      <img className='baseImg' src={img} alt="bg" />
-      <div className='container'>
-        <img className='logo' src={logo} alt="logo" />
-        <div className='heroContent'>
-        <p className='text'>" Creativity is Contagious, Pass it on"</p>
-        <p className='author'>~Albert Einstein</p>
-        <button className='btn'>Get Infected</button>
-        </div>
-       </div>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="/poems" element={<Poems />} />
+      </Routes>
+    </BrowserRouter>
   )
+  
+
 }
 
-export default App
+export default App;

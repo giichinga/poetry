@@ -1,0 +1,31 @@
+.logoImg {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+}
+
+body {
+    color: rgb(68, 68, 68);
+    font-family: 'Funnel Display', cursive;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+hr {
+    width: 75%;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+   margin-top: 2rem;
+    padding: 0;
+
+}
+
+li {
+    margin: 1.25rem 0;
+}
